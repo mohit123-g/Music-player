@@ -48,7 +48,6 @@ export default function App() {
      <BrowserRouter>
        
         <Link to="home"> <h3 id="title">HOME</h3>  </Link>
-          {/* <Link id="link" to="player1"> <h3> Player</h3> </Link> */}
       
      {console.log(songs)}
            <Routes>
@@ -57,13 +56,10 @@ export default function App() {
                                                 setSearch={setSearch}
                                                 songs={songs} 
                                                 setSongs={setSongs}
-                                                // SearchSong={SearchSong}
-                                                // setSearchSong={setSearchSong}
+                                      
                                                 />}></Route>
             <Route  path="player" index element={<Player  />}></Route>
-            {/* <Route  path="search" index element={<Player song={songs[SearchSong].audio}
-             name={songs[SearchSong].name}/>}></Route>
-    */}
+         
             <Route  path="player1" index element={<Player song={songs[0].audio} name={songs[0].name}/>}></Route>
             <Route  path="player2" index element={<Player song={songs[1].audio} name={songs[1].name}/>}></Route>
             <Route  path="player3" index element={<Player song={songs[2].audio} name={songs[2].name}/>}></Route>
@@ -93,12 +89,7 @@ export default function App() {
            </Routes>
   
         </BrowserRouter>
-      {/* <Songs  
-        search={search} 
-        setSearch={setSearch}
-        songs={songs} 
-        setSongs={setSongs}
-      /> */}
+   
     </div>
   );
 }
