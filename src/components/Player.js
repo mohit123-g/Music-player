@@ -5,6 +5,7 @@ import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import "../styles.css";
 function Player(props) {  
+    var [i,setI]=useState(props.index);
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState({
     min: "",
@@ -18,7 +19,7 @@ function Player(props) {
 
   const [seconds, setSeconds] = useState();
 
-  const [play, { pause, duration, sound }] = useSound(props.song);
+  const [play, { pause, duration, sound }] = useSound(props.song[i].audio);
 
 
    useEffect(() => {
@@ -64,7 +65,8 @@ function Player(props) {
       <h2>Playing Now</h2>
       <img className="musicCover" src="https://picsum.photos/200/200" />
       <div>
-        <h3 className="title">{props.name}</h3>
+        <h3 className="title">{props.song[i].name}</h3>
+             {console.log(props.index)}
         <p className="subTitle">MOHIT</p>
       </div>
       <div>
@@ -89,7 +91,7 @@ function Player(props) {
         />
       </div>
       <div>
-        <button className="playButton">
+        <button className="playButton" onClick={()=>{setI(i--)}}>
           <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
             <BiSkipPrevious />
           </IconContext.Provider>
@@ -107,7 +109,8 @@ function Player(props) {
             </IconContext.Provider>
           </button>
         )}
-        <button className="playButton">
+      <button className="playButton"  onClick={()=>{setI(i++)}}>
+                    {console.log(i)}
           <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
             <BiSkipNext />
           </IconContext.Provider>
