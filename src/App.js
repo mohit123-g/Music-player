@@ -60,32 +60,32 @@ export default function App() {
                                                 />}></Route>
             <Route  path="player" index element={<Player  />}></Route>
          
-            <Route  path="player1" index element={<Player song={songs[0].audio} name={songs[0].name}/>}></Route>
-            <Route  path="player2" index element={<Player song={songs[1].audio} name={songs[1].name}/>}></Route>
-            <Route  path="player3" index element={<Player song={songs[2].audio} name={songs[2].name}/>}></Route>
-            <Route  path="player4" index element={<Player song={songs[3].audio}/>}></Route>
-            <Route  path="player5" index element={<Player song={songs[4].audio}/>}></Route>
-            <Route  path="player6" index element={<Player song={songs[5].audio}/>}></Route>
-            <Route  path="player7" index element={<Player song={songs[6].audio}/>}></Route>
-            <Route  path="player8" index element={<Player song={songs[7].audio}/>}></Route>
-            <Route  path="player9" index element={<Player song={songs[8].audio}/>}></Route>
-            <Route  path="player10" index element={<Player song={songs[9].audio}/>}></Route>
-            <Route  path="player11" index element={<Player song={songs[10].audio}/>}></Route>
-            <Route  path="player12" index element={<Player song={songs[11].audio}/>}></Route>
-            <Route  path="player13" index element={<Player song={songs[12].audio}/>}></Route>
-            <Route  path="player14" index element={<Player song={songs[13].audio}/>}></Route>
-            <Route  path="player15" index element={<Player song={songs[14].audio}/>}></Route>
-            <Route  path="player16" index element={<Player song={songs[15].audio}/>}></Route>
-            <Route  path="player17" index element={<Player song={songs[16].audio}/>}></Route>
-            <Route  path="player18" index element={<Player song={songs[17].audio}/>}></Route>
-            <Route  path="player19" index element={<Player song={songs[18].audio}/>}></Route>
-            <Route  path="player20" index element={<Player song={songs[19].audio}/>}></Route>
-            <Route  path="player21" index element={<Player song={songs[20].audio}/>}></Route>
-            <Route  path="player22" index element={<Player song={songs[21].audio}/>}></Route>
-            <Route  path="player23" index element={<Player song={songs[22].audio}/>}></Route>
-            <Route  path="player24" index element={<Player song={songs[23].audio}/>}></Route>
-            <Route  path="player25" index element={<Player song={songs[24].audio}/>}></Route>
-            <Route  path="player26" index element={<Player song={songs[25].audio}/>}></Route>
+            <Route  path="player1" index element={<Player song={songs} index={0}/>}></Route>
+            <Route  path="player2" index element={<Player song={songs} index={1}/>}></Route>
+            <Route  path="player3" index element={<Player song={songs} index={2}/>}></Route>
+            <Route  path="player4" index element={<Player song={songs} index={3}/>}></Route>
+            <Route  path="player5" index element={<Player song={songs} index={4}/>}></Route>
+            <Route  path="player6" index element={<Player song={songs} index={5}/>}></Route>
+            <Route  path="player7" index element={<Player song={songs} index={6}/>}></Route>
+            <Route  path="player8" index element={<Player song={songs} index={7}/>}></Route>
+            <Route  path="player9" index element={<Player song={songs} index={8}/>}></Route>
+            <Route  path="player10" index element={<Player song={songs} index={9}/>}></Route>
+            <Route  path="player11" index element={<Player song={songs} index={10}/>}></Route>
+            <Route  path="player12" index element={<Player song={songs} index={11}/>}></Route>
+            <Route  path="player13" index element={<Player song={songs} index={12}/>}></Route>
+            <Route  path="player14" index element={<Player song={songs} index={13}/>}></Route>
+            <Route  path="player15" index element={<Player song={songs} index={14}/>}></Route>
+            <Route  path="player16" index element={<Player song={songs} index={15}/>}></Route>
+            <Route  path="player17" index element={<Player song={songs} index={16}/>}></Route>
+            <Route  path="player18" index element={<Player song={songs} index={17}/>}></Route>
+            <Route  path="player19" index element={<Player song={songs} index={18}/>}></Route>
+            <Route  path="player20" index element={<Player song={songs} index={19}/>}></Route>
+            <Route  path="player21" index element={<Player song={songs} index={20}/>}></Route>
+            <Route  path="player22" index element={<Player song={songs} index={21}/>}></Route>
+            <Route  path="player23" index element={<Player song={songs} index={22}/>}></Route>
+            <Route  path="player24" index element={<Player song={songs} index={23}/>}></Route>
+            <Route  path="player25" index element={<Player song={songs} index={24}/>}></Route>
+            <Route  path="player26" index element={<Player song={songs} index={25}/>}></Route>
            </Routes>
   
         </BrowserRouter>
