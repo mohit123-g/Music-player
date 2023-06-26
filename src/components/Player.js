@@ -92,10 +92,12 @@ function Player(props) {
       </div>
       <div><h1>
         <button className="playButton" onClick={()=>{
-          pause()
+          if(i>=0)
+         { pause()
           setI(i--)
-          setIsPlaying(false);
-
+          setIsPlaying(false);}
+          else
+          {alert("No previous song")}
           }}>
           <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
             <BiSkipPrevious />
@@ -115,9 +117,12 @@ function Player(props) {
           </button>
         )}
       <button className="playButton"  onClick={()=>{
-         pause()
-        setI(i++)
-        setIsPlaying(false);
+      if(i<props.song.length)
+      { pause()
+       setI(i++)
+       setIsPlaying(false);}
+       else
+       {alert("No Next Song")}
         }}>
                     {console.log(i)}
           <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
