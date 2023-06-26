@@ -9,18 +9,18 @@ body {
   
   .component {
     background-color: white;
-    width: 25%;
+    width: 40%;
     max-width: 600px;
     margin: 1em auto;
-    padding-bottom: 2em;
-    border: 0.1px solid black;
+    padding-bottom: 10em;
+    border: 2px solid black;
     border-radius: 10px;
     align-items: center;
     text-align: center;
   }
   
   .musicCover {
-    border-radius: 10%;
+    border-radius: 20%;
   }
   
   .playButton {
