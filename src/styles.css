@@ -21,6 +21,8 @@ body {
   
   .musicCover {
     border-radius: 20%;
+     height: 300px;
+    width: 300px;
   }
   
   .playButton {
