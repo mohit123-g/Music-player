@@ -90,7 +90,7 @@ function Player(props) {
           }}
         />
       </div>
-      <div>
+      <div><h1>
         <button className="playButton" onClick={()=>{
           pause()
           setI(i--)
@@ -123,7 +123,7 @@ function Player(props) {
           <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
             <BiSkipNext />
           </IconContext.Provider>
-        </button>
+        </button></h1>
       </div>
     </div>
   );
