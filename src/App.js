@@ -33,9 +33,9 @@ export default function App() {
   import song26 from "./songs/Z.mp3";
 
   const [songs, setSongs] = useState([
-    { audio:song1 , name: "" },
-    { audio:song2 , name: "" },
-    { audio:song3 , name: "" },
+    { audio:song1 , name: "Aaaram" },
+    { audio:song2 , name: "Doremon" },
+    { audio:song3 , name: "Dil duba" },
     { audio:song4 , name: "" },
     { audio:song5 , name: "" },
     { audio:song6 , name: "" },
