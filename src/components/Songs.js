@@ -210,7 +210,35 @@ const Songs = (props) => {
             src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
           />
         </a>
+
         <a href="player26">
+          <img
+            id="but1"
+            src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
+          />
+        </a>
+        <a href="player27">
+          <img
+            id="but1"
+            src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
+          />
+        </a>
+
+        <a href="player28">
+          <img
+            id="but1"
+            src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
+          />
+        </a>
+
+        <a href="player29">
+          <img
+            id="but1"
+            src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
+          />
+        </a>
+
+        <a href="player30">
           <img
             id="but1"
             src="https://static.vecteezy.com/system/resources/thumbnails/008/777/617/small/music-man-gamer-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-isolated-black-background-for-t-shirt-poster-clothing-merch-apparel-badge-design-vector.jpg"
