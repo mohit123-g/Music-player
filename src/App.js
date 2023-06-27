@@ -3,71 +3,51 @@ import Songs from "./components/Songs";
 import "./styles.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
+// import song1 from "./songs/A.mp3";
 import { render } from "@testing-library/react";
 export default function App() {
-  import song1 from "./songs/A.mp3";
-  import song2 from "./songs/B.mp3";
-  import song3 from "./songs/C.mp3";
-  import song4 from "./songs/D.mp3";
-  import song5 from "./songs/E.mp3";
-  import song6 from "./songs/F.mp3";
-  import song7 from "./songs/G.mp3";
-  import song8 from "./songs/H.mp3";
-  import song9 from "./songs/I.mp3";
-  import song10 from "./songs/J.mp3";
-  import song11 from "./songs/K.mp3";
-  import song12 from "./songs/L.mp3";
-  import song13 from "./songs/M.mp3";
-  import song14 from "./songs/N.mp3";
-  import song15 from "./songs/O.mp3";
-  import song16 from "./songs/P.mp3";
-  import song17 from "./songs/Q.mp3";
-  import song18 from "./songs/R.mp3";
-  import song19 from "./songs/S.mp3";
-  import song20 from "./songs/T.mp3";
-  import song21 from "./songs/U.mp3";
-  import song22 from "./songs/V.mp3";
-  import song23 from "./songs/W.mp3";
-  import song24 from "./songs/X.mp3";
-  import song25 from "./songs/Y.mp3";
-  import song26 from "./songs/Z.mp3";
-
+  
   const [songs, setSongs] = useState([
-    { audio:song1 , name: "Aaaram" },
-    { audio:song2 , name: "Doremon" },
-    { audio:song3 , name: "Dil duba" },
-    { audio:song4 , name: "" },
-    { audio:song5 , name: "" },
-    { audio:song6 , name: "" },
-    { audio:song7 , name: "" },
-    { audio:song8 , name: "" },
-    { audio:song9 , name: "" },
-    { audio:song10 , name: "" },
-    { audio:song11, name: "" },
-    { audio:song12 , name: "" },
-    { audio:song13 , name: "" },
-    { audio:song14 , name: "" },
-    { audio:song15 , name: "" },
-    { audio:song16 , name: "" },
-    { audio:song17 , name: "" },
-    { audio:song18 , name: "" },
-    { audio:song19 , name: "" },
-    { audio:song20 , name: "" },
-    { audio:song21 , name: "" },
-    { audio:song22 , name: "" },
-    { audio:song23 , name: "" },
-    { audio:song24 , name: "" },
-    { audio:song25 , name: "" },
-    { audio:song26 , name: "" }
+    { audio: "https://dl.sndup.net/t2qq/Aaaram.mp3", name: "Aaaram" },
+    { audio: "https://dl.sndup.net/bvwn/B.mp3", name: "Knox" },
+    { audio: "https://dl.sndup.net/zmwy/Badshah%20-%20SANAK.mp3", name: "Sanak" },
+    { audio: "https://dl.sndup.net/h46f/Bekhayali%20Full%20Song%20_%20Kabir%20Singh.mp3" },
+    { audio: "https://dl.sndup.net/symp/Dil%20Dooba%20Lyrical%20Video%20Song.mp3" },
+    { audio: "https://dl.sndup.net/v2r5/Kesariya%20-%20Brahm%C4%81stra.mp3"},
+    { audio: "https://dl.sndup.net/jbpb/Aasma%20ko%20chukar%20dekho_.mp3" },
+    { audio: "https://dl.sndup.net/zcph/Ram%20Siya%20Ram.mp3" },
+    { audio: "https://dl.sndup.net/6yss/Bhaag%20Ganje%20Bhaag.mp3" },
+    { audio: "https://dl.sndup.net/7w57/Dil%20Ne%20Ye%20Kaha%20Hai%20Dil%20Se.mp3" },
+    { audio: "https://dl.sndup.net/p5xh/Heer%20Ranjha.mp3" },
+    { audio: "https://dl.sndup.net/pjrk/Imagine%20Dragons.mp3" },
+    { audio: "https://dl.sndup.net/zprg/David%20Guetta.mp3" },
+    { audio: "https://dl.sndup.net/x7x2/Main%20Hoon%20Ghatothkach.mp3" },
+    { audio: "https://dl.sndup.net/dkfc/Maine%20Royaan.mp3" },
+    { audio: "https://dl.sndup.net/3xqg/laree%20Choote.mp3" },
+    { audio: "https://dl.sndup.net/fh9q/Mann%20Bharryaa.mp3" },
+    { audio: "https://dl.sndup.net/6g64/O%20Bedardeya.m4a" },
+    { audio: "https://dl.sndup.net/r2jx/Main%20Dhoondne%20Ko%20Zamaane%20Mein.mp3" },
+    { audio: "https://dl.sndup.net/nrrv/Satisfya%20-%20I%20am%20a%20Rider.mp3" },
+    { audio: "https://dl.sndup.net/b3md/EMIWAY%20-%20Freeverse%20Feast.m4a" },
+    { audio: "https://dl.sndup.net/cjvy/FREEVERSE%20FEAST%20_%20KR_NA.m4a" },
+    { audio: "https://dl.sndup.net/ts9w/EMIWAY%20-%20SEEDHA%20TAKEOVER.m4a" },
+    { audio: "https://dl.sndup.net/jqwc/KR_NA%20-%20SEEDHA%20MAKEOVER.m4a" },
+    { audio: "https://dl.sndup.net/pcm3/EMIWAY%20-%20CHUSAMBA.m4a" },
+    { audio: "https://dl.sndup.net/jppy/KR_NA%20-%20Lil%20Bunty.m4a" },
+    { audio: "https://dl.sndup.net/hp9d/EMIWAY%20-%20KR%20L_DA%20SIGN.m4a" },
+    { audio: "https://dl.sndup.net/q64v/KR_NA%20-%20Machayenge%204.m4a" },
+    { audio: "https://dl.sndup.net/hkcr/MACHAYENGE%204.m4a" },
+    { audio: "https://dl.sndup.net/gwmh/Ghost%20Sound%20Effects.mp3",name:"😱" },
   ]);
   const [search, setSearch] = useState("");
   return (
     <div className="App">
       <BrowserRouter>
         <Link to="home">
-          {" "}
-          <h3 id="title">HOME</h3>{" "}
+
+          <h2 id="title">HOME</h2>
         </Link>
+       
 
         {console.log(songs)}
         <Routes>
@@ -214,6 +194,26 @@ export default function App() {
             path="player26"
             index
             element={<Player song={songs} index={25} />}
+          ></Route>
+           <Route
+            path="player27"
+            index
+            element={<Player song={songs} index={26} />}
+          ></Route>
+           <Route
+            path="player28"
+            index
+            element={<Player song={songs} index={27} />}
+          ></Route>
+           <Route
+            path="player29"
+            index
+            element={<Player song={songs} index={28} />}
+          ></Route>
+           <Route
+            path="player30"
+            index
+            element={<Player song={songs} index={29} />}
           ></Route>
         </Routes>
       </BrowserRouter>
